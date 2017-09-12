@@ -20,7 +20,8 @@ public class Main {
             date = format.parse(line);
             } catch (ParseException e) {
      System.out.println("Sorry, that's not valid. Please try again.");
-    }
+    Student obj= new Student(num,name,date,roll);
+            }
 }
 
 //You may test that your code works find here
