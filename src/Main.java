@@ -13,14 +13,14 @@ public class Main {
          name=sc.nextLine();
          roll=sc.nextDouble();
          Date date = null;
-        DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-        while (date == null) {
-        String line = sc.nextLine();
-        try {
+         DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+         while (date == null) {
+         String line = sc.nextLine();
+         try {
             date = format.parse(line);
             } catch (ParseException e) {
-     System.out.println("Sorry, that's not valid. Please try again.");
-    Student obj= new Student(num,name,date,roll);
+         System.out.println("Sorry, that's not valid. Please try again.");
+         Student obj= new Student(num,name,date,roll);
             }
 }
 
